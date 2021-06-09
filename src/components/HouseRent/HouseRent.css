@@ -1,0 +1,11 @@
+
+.house-title{
+    color: #1a3b37 !important;
+}
+
+@media (max-width: 767px){
+    .house-card{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
