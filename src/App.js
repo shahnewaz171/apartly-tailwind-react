@@ -6,6 +6,7 @@ import HeaderMain from './components/HeaderMain/HeaderMain';
 import Dropdown from './components/Navbar/Dropdown';
 import HouseRent from './components/HouseRent/HouseRent';
 import Footer from './components/Footer/Footer';
+import Services from './components/Services/Services';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,7 @@ function App() {
           <Route path="/">
             <HeaderMain />
             <HouseRent />
+            <Services />
             <Footer />
           </Route>
         </Switch>
