@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HeaderMain from './components/HeaderMain/HeaderMain';
 import Dropdown from './components/Navbar/Dropdown';
 import HouseRent from './components/HouseRent/HouseRent';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,7 @@ function App() {
           <Route path="/">
             <HeaderMain />
             <HouseRent />
+            <Footer />
           </Route>
         </Switch>
       </Router>
