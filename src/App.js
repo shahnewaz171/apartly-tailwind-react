@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HeaderMain from './components/HeaderMain/HeaderMain';
 import Dropdown from './components/Navbar/Dropdown';
+import HouseRent from './components/HouseRent/HouseRent';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ function App() {
         <Switch>
           <Route path="/">
             <HeaderMain />
+            <HouseRent />
           </Route>
         </Switch>
       </Router>

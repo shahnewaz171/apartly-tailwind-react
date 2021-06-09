@@ -1,3 +1,7 @@
+.menu-style{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
 @media (max-width: 767px){
     .nav-style .nav-title{
         padding-left: 1rem;
