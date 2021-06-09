@@ -1,0 +1,15 @@
+.headerImage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),url("../../images/headerimage.png");
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 767px){
+    .headerImage{
+        height: 100vh;
+    }
+}

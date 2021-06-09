@@ -2,9 +2,20 @@ import React from 'react';
 import './HeaderMain.css';
 
 const HeaderMain = () => {
+    const handleSubmit = event => {
+        event.preventDefault();
+    }
     return (
-        <div className="bg-white h-screen  flex flex-col justify-center items-center">
-            <h1 className="lg:text:9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14">Apartly</h1>
+        <div className="bg-white h-screen flex flex-col justify-center items-center headerImage">
+            <div class="bg-auto bg-no-repeat bg-center ..." >
+                <h3 className="lg:text:7xl md:text-5xl sm:text-3xl text-3xl font-bold mb-14 uppercase text-white">Find your house rent</h3>
+                <form onSubmit={handleSubmit} className="flex justify-center">
+                    <input class="bg-gray-200 hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:shadow-outline focus:border-gray-300 py-2 px-4 rounded w-3/5" placeholder="Search..." required />
+                    <button type="submit" className="text-white ml-4 bg-green-800  py-2 px-8 rounded">
+                        Find Now
+                    </button>
+                </form>
+            </div>
         </div>
     );
 };
